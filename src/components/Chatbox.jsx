@@ -44,7 +44,7 @@ export default function Chatbox({ onClose }) {
 
     try {
       const userPrompt = `${DEFAULT_PROMPT}\n\n${input}`;
-      const res = await fetch("http://localhost:5000/gemini-chat", {
+      const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/gemini-chat`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: userPrompt }),
