@@ -1,0 +1,27 @@
+# Node.js
+node_modules/
+dist/
+.env
+.vite/
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+*.sqlite3
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Others
+*.bak
+*.swp
